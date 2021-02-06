@@ -1,0 +1,184 @@
+.processgoalrow {
+  /*border: 1px solid #e4e6e6;
+  background-color: #e4e6e6;*/
+  font-size: 14px;
+  font-family: 'helvetica';
+  width: 100%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: -10px;
+}
+
+.processrowheader {
+  font-size: larger;
+  font-weight: bold;
+  font-family: 'helvetica';
+  width: 100%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  margin: 5px 5px 10px 10px;
+}
+
+.processrow {
+  //border: 1px solid #e4e6e6;
+  //background-color: #e4e6e6;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'helvetica';
+  margin: 5px 5px 10px 10px;
+}
+
+.processcolumn {
+  border: 1px solid #e4e6e6;
+  background-color: #e4e6e6;
+}
+
+.processsummaryrow {
+  display: flex;
+  align-items: center;
+}
+
+.processsummarylabelcolumn {
+  width: 200px;
+  margin: 0px 10px 0px 10px;
+}
+
+.processsummarymetriccolumn {
+  border-left: 1px solid #e4e6e6;
+  border-right: 1px solid #e4e6e6;
+  background-color: #e4e6e6 !important;
+  width: 200px !important;
+  margin: 0px 10px 0px 10px;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'helvetica';
+  text-align: center;
+}
+
+.box-label {
+  width: 17%;
+  min-width: 97px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.summary-box-label {
+  width: 100%;
+  min-width: 100px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 22px;
+  font-weight: bold;
+  margin: -16px 5px 5px 5px;
+  font-family: 'helvetica';
+  line-height: 30px;
+}
+
+.summary-goal {
+  font-size: 14px;
+  font-family: 'helvetica';
+  width: 100%;
+  min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.processrow .box-label {
+  justify-content: flex-start;
+}
+
+.processrowheader .box-label, .processgoalrow .box-label {
+  margin-left: -20px;
+}
+
+.box {
+  width: 17%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.summarybox {
+  /*width: 50%;*/
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+
+.box-green, .box-green a {
+  background-color: #3ccb9d;
+  fill: #229470;
+  color: #fff;
+}
+
+.box-green-secondary {
+  background-color: #229470;
+}
+
+.box-red, .box-red a {
+  background-color: #f52f2c;
+  fill: #b90200;
+  color: #fff;
+}
+
+.box-red-secondary {
+  background-color: #b90200;
+}
+
+.box-yellow, .box-yellow a {
+  background-color: #fec750;
+  fill: #e0ad3a;
+  color: #fff;
+}
+
+.box-yellow-secondary {
+  background-color: #e0ad3a;
+}
+
+.box-gray, .box-gray a {
+  background-color: #424043;
+  fill: #29282a;
+  color: #fff;
+}
+
+.box-gray-secondary {
+  background-color: #29282a;
+}
+
+.box1 {
+  height: 100px;
+}
+
+.box2 {
+  height: 90px;
+}
+
+.box3 {
+  height: 80px;
+}
+
+.box4 {
+  height: 70px;
+}
+
+.box5 {
+  height: 60px;
+}
