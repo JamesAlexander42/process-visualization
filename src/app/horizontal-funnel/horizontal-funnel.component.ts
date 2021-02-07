@@ -8,6 +8,8 @@ import { FunnelRow, Segment } from './horizontal-funnel.model';
 })
 export class HorizontalFunnelComponent implements OnInit {
 
+
+
   funnelRows: FunnelRow[] = [{
     name: '3rdParty',
     title: '3rd Party',
@@ -18,25 +20,25 @@ export class HorizontalFunnelComponent implements OnInit {
       name: 'Appointments',
       value: '22.3%',
       color: 'green',
-      descriptionValue: 'Top 25%: 32.9%'
+      // descriptionValue: 'Top 25%: 32.9%'
     }, {
       name: 'testDrives',
       value: '21.7%',
       color: 'green',
       title: 'Test Drives',
-      descriptionValue: 'Top 25%: 34.3%'
+      // descriptionValue: 'Top 25%: 34.3%'
     }, {
       name: 'offerToPurchase',
       value: '19.2%',
       color: 'yellow',
       title: 'Offers To Purchase',
-      descriptionValue: 'Top 25%: 23.6%'
+      // descriptionValue: 'Top 25%: 23.6%'
     }, {
       name: 'closeRate',
       title: 'Close Rate',
       value: '4.7%',
       color: 'red',
-      descriptionValue: 'Top 25%: 9.1%'
+      // descriptionValue: 'Top 25%: 9.1%'
     }]
   }];
 
