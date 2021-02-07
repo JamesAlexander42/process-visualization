@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HorizontalFunnelComponent } from './horizontal-funnel/horizontal-funnel.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HorizontalFunnelComponent
   ],
   imports: [
     BrowserModule,

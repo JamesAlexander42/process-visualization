@@ -1,0 +1,41 @@
+<div class="funnel-row" *ngFor="let row of funnelRows">
+  <div class="row">
+    <div class="processrowheader">
+      <div class="box-label"></div>
+      <div class="box" *ngFor="let segment of row.segments">{{ segment.title || segment.name }}</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="processgoalrow">
+      <div class="box-label"></div>
+      <div class="box" *ngFor="let segment of row.segments">{{ segment.descriptionValue }}</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="processrow">
+      <div class="box-label">{{row.title || row.name }}</div>
+      <ng-container *ngFor="let segment of getSegmentsForDisplay(row)">
+        <div [ngClass]="segment.classes">{{segment.value}}</div>
+        <svg *ngIf="segment.path" class="box1" style="width: 25px">
+          <path [attr.d]="segment.path" [attr.class]="segment.pathClass" />
+        </svg>
+      </ng-container>
+      <!-- <div class="box box-green box2">22.3%</div>
+      <svg class="box1" style="width: 25px">
+        <path d="M0,5 L25,10 L25,90 L0,95z" class="box-green" />
+      </svg>
+      <div class="box box-green box3">21.7%</div>
+      <svg class="box1" style="width: 25px">
+        <path d="M0,10 L25,15 L25,85 L0,90z" class="box-green" />
+      </svg>
+      <div class="box box-yellow box4">219</div>
+      <svg class="box1" style="width: 25px">
+        <path
+          d="M0,15 L25,20 L25,80 L0,85z"
+          class="box-yellow"
+        />
+      </svg>
+      <div class="box box-red box5">3.2%</div> -->
+    </div>
+  </div>
+</div>
