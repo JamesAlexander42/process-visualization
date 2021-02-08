@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FunnelRow, Segment } from './horizontal-funnel.model';
 
 @Component({
@@ -8,39 +8,7 @@ import { FunnelRow, Segment } from './horizontal-funnel.model';
 })
 export class HorizontalFunnelComponent implements OnInit {
 
-
-
-  funnelRows: FunnelRow[] = [{
-    name: '3rdParty',
-    title: '3rd Party',
-    segments: [{
-      name: 'Leads',
-      value: '2,117'
-    }, {
-      name: 'Appointments',
-      value: '22.3%',
-      color: 'green',
-      // descriptionValue: 'Top 25%: 32.9%'
-    }, {
-      name: 'testDrives',
-      value: '21.7%',
-      color: 'green',
-      title: 'Test Drives',
-      // descriptionValue: 'Top 25%: 34.3%'
-    }, {
-      name: 'offerToPurchase',
-      value: '19.2%',
-      color: 'yellow',
-      title: 'Offers To Purchase',
-      // descriptionValue: 'Top 25%: 23.6%'
-    }, {
-      name: 'closeRate',
-      title: 'Close Rate',
-      value: '4.7%',
-      color: 'red',
-      // descriptionValue: 'Top 25%: 9.1%'
-    }]
-  }];
+  @Input() funnelRows: FunnelRow[] = [];
 
   ngOnInit(): void {
   }
